@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* hero / navbar section */
+
+.hero-img {
+    margin: 5px;
+    height: 50vh;
+    position: relative;
+    background-color: rgb(88, 114, 122);
+}
+
+header {
+    overflow: hidden;
+}
+
+header .logo {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    float: left;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 16px 16px 14px;
+}
+
+.open-side-nav-btn {
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    float: right;
+    font-size: 17px;
+    padding: 14px 16px;
+    border: none;
+}
+
+
+header .navbar-lg {
+    display: none;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    margin: 0 0 6px 0;
+    font-size: 1.5em;
+}
+
+.hero-text p {
+    margin: 0;
+    font-size: 1em;
+    position: relative;
+}
+
+.hero-text p::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2.5px;
+    background-color: white;
+}
+
+/* small divices sidenav */
+
+.side-nav-sm {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgb(38, 58, 65);
+    transition: .4s ease-in-out;
+}
+
+.close-side-nav-btn {
+    display: block;
+    position: relative;
+    left: 200px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 14px 16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.side-nav-sm ul {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.side-nav-sm ul li {
+    list-style: none;
+    padding: 6px;
+}
+
+.side-nav-sm ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* section title */
+
+.title {
+    text-align: center;
+    font-weight: normal;
+    color: rgb(26, 41, 46);
+}
+
+/* section2 */
+
+.section2 {
+    padding: 30px 0;
+    background-color: rgb(227, 236, 238);
+}
+
+.section2 .title {
+    margin: 0 0 30px;
+    position: relative;
+}
+
+.section2 .title::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2.5px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(26, 41, 46, 0.692);
+}
+
+.section2 .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section2 .card {
+    width: 270px;
+    margin: 5px;
+    box-shadow: 0 0px 5px 0;
+    overflow: hidden;
+}
+
+.section2 .card-img {
+    height: 150px;
+    margin: 0;
+}
+
+.section2 .card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.section2 .card-text {
+    height: 150px;
+    padding: 30px;
+    background-color: white;
+    color: rgb(26, 41, 46)
+}
+
+.section2 .card-text p {
+    margin: 0;
+    text-align: center;
+}
+
+/* section 3 */
+
+.section3 .text-container {
+    padding: 30px;
+}
+
+.section3 .text-container .title {
+    margin: 0 0 30px;
+    position: relative;
+}
+
+.section3 .text-container .title::after {
+    content: '';
+    width: 30px;
+    height: 2.5px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(26, 41, 46, 0.692);
+}
+
+.section3 .text-container p {
+    margin: 0;
+    font-size: 14.5px;
+}
+
+.section3 figure {
+    height: 224px;
+    margin: 0;
+}
+
+.section3 figure img {
+    width: 100%;
+    height: 100%;
+}
+
+/* section 4 */
+
+.section4 {
+    padding: 30px;
+    background-color: rgb(202, 211, 214);
+}
+
+.section4 .title {
+    margin: 0 0 5px;
+}
+
+.section4 p {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(26, 41, 46);
+    margin: 0 0 15px;
+}
+
+.section4 form {
+    text-align: center;
+}
+
+.section4 form input {
+    outline: none;
+    border: none;
+}
+
+.section4 input[type='text'] {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    padding: 4px 12px;
+}
+
+.section4 input[type='button'] {
+    text-align: center;
+    height: 30px;
+    border: 2px solid rgb(97 127 138);
+    background-color: rgb(202, 211, 214);
+    padding: 2px 18px;
+    color: rgb(26, 41, 46);
+}
